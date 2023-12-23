@@ -21,9 +21,6 @@ function isPangram(string) {
   return alphabetArray.every((occurred) => occurred);
 }
 
-const прикладСтрічки = "Грає жвавий пес на цьому березі річки";
-console.log(isPangram(прикладСтрічки)); // Вивід: false
-
 // 2
 // There was a test in your class and you passed it. Congratulations!
 // But you're an ambitious person. You want to know if you're better than the average student in your class.
@@ -48,3 +45,17 @@ function betterThanAverage(classPoints, yourPoints) {
 
 // const result = betterThanAverage(classPoints, yourPoints);
 // console.log(result);
+
+// Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
+
+// Examples (Input -> Output):
+// * "String"      -> "SSttrriinngg"
+// * "Hello World" -> "HHeelllloo  WWoorrlldd"
+// * "1234!_ "     -> "11223344!!__  "
+
+function doubleChar(str) {
+  return str
+    .split("")
+    .map((char) => char + char)
+    .join("");
+}
