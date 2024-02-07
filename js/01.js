@@ -124,4 +124,7 @@ function greet(name, owner) {
     return "Hello guest";
   }
 }
-345678;
+
+function makeUpperCase(str) {
+  return str.toUpperCase();
+}
