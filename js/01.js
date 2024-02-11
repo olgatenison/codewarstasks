@@ -128,3 +128,7 @@ function greet(name, owner) {
 function makeUpperCase(str) {
   return str.toUpperCase();
 }
+
+function smash(words) {
+  return words.join(" ");
+}
